@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimul's Website</title>
+    
+    <style>
+        /* ==========================================================
+           🎨 রঙ এবং থিম পরিবর্তনের জায়গা (Theme Variables)
+           আপনি চাইলে নিচের কালার কোডগুলো (Hex Code) পরিবর্তন করতে পারেন।
+        ========================================================== */
+        :root {
+            --primary-color: #4A90E2;    /* প্রধান কালার (হেডার ও বাটন) */
+            --secondary-color: #357ABD;  /* বাটনের ওপর মাউস নিলে যে কালার হবে */
+            --background-color: #F4F7F6; /* পুরো ওয়েবসাইটের ব্যাকগ্রাউন্ড কালার */
+            --card-color: #FFFFFF;       /* বক্স বা কন্টেন্টের ব্যাকগ্রাউন্ড */
+            --text-color: #333333;       /* লেখার রঙ */
+        }
+
+        /* বেসিক স্টাইল */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* হেডার স্টাইল */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* মূল কন্টেন্ট এয়ারিয়া */
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+            flex: 1;
+        }
+
+        .card {
+            background-color: var(--card-color);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        .card h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        /* বাটন স্টাইল */
+        .btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* ফুটার স্টাইল */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #e0e0e0;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 📌 হেডার সেকশন -->
+    <header>
+        <h1>স্বাগতম, আমি শিমুল! 👋</h1>
+        <p>এটি আমার নিজের তৈরি প্রথম ওয়েবসাইট</p>
+    </header>
+
+    <!-- 📌 মূল কন্টেন্ট সেকশন -->
+    <main>
+        <div class="card">
+            <h2>আমার সম্পর্কে</h2>
+            <p>হ্যালো! আমি শিমুল। আমি নতুন ওয়েবসাইট ডিজাইন করা শিখছি। এটি VS Code ব্যবহার করে বানানো একদম সহজ একটি ওয়েবসাইট।</p>
+        </div>
+
+        <div class="card">
+            <h2>আমার প্রজেক্ট বা কাজের তালিকা</h2>
+            <ul>
+                <li>ওয়েব ডিজাইন শিখছি</li>
+                <li>HTML & CSS কোডিং করছি</li>
+                <li>VS Code ব্যবহার করছি</li>
+            </ul>
+            <br>
+            <a href="https://google.com" target="_blank" class="btn">আরও জানতে ক্লিক করুন</a>
+        </div>
+    </main>
+
+    <!-- 📌 ফুটার সেকশন -->
+    <footer>
+        <p>&copy; 2026 শিমুল | সর্বস্বত্ব সংরক্ষিত</p>
+    </footer>
+
+</body>
+</html>
